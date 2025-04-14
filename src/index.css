@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font: normal normal bold 16px/14px Calibri;
+    font-size: 10px !important;
+  -webkit-font-smoothing: antialiased;
+  padding: 0 !important;
+  width: 100%;
+  min-height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+    position: relative;
+    height: 100%;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+

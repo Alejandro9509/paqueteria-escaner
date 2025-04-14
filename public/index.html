@@ -1,0 +1,95 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <meta charset="utf-8" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="css/material-design-iconic-font.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="css/animate.css">
+    <link type="text/css" rel="stylesheet" href="css/layout.css">
+    <link type="text/css" rel="stylesheet" href="css/components.css">
+    <link type="text/css" rel="stylesheet" href="css/widgets.css">
+    <link type="text/css" rel="stylesheet" href="css/plugins.css">
+    <link type="text/css" rel="stylesheet" href="css/pages.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-extend.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link type="text/css" rel="stylesheet" href="css/responsive.css">
+    <link type="text/css" rel="stylesheet" href="css/project-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+   
+</head>
+  </head>
+  <body style="background-color:#E6E6E6;">
+    <div id="root" class="leftbar-view iconic-view">
+
+    </div>
+      <!-- Aquí debería cargarse el bundle.js de React (esto lo pone CRA en build) -->
+    <script src="%PUBLIC_URL%/config.js"></script> <!-- ✅ DEJA esto aquí -->
+    
+  
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('worker.js').then(function(registration) {
+            console.log('Worker registration successful', registration.scope);
+          }, function(err) {
+            console.log('Worker registration failed', err);
+          }).catch(function(err) {
+            console.log(err);
+          });
+        });
+      } else {
+        console.log('Service Worker is not supported by browser.');
+      }
+    </script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+
+  <!--<script-->
+<!--type="text/javascript">-->
+
+<!--var $zoho= $zoho || {livedesk:{values:{},ready:function(){}}};-->
+
+<!--var d=document;-->
+
+<!--s=d.createElement("script");-->
+
+<!--s.type="text/javascript";-->
+
+<!--s.defer=true;-->
+
+<!--s.src="https://livedesk.zoho.com/support.sdplive637893146/chat.ls?embedname=grupogmtransportsadecv";-->
+
+<!--t=d.getElementsByTagName("script")[0];-->
+
+<!--t.parentNode.insertBefore(s,t);-->
+
+<!--document.write("<div style='width:20%; float:right;'><div id='zldchtframe' style='width:10%'></div></div>")-->
+
+<!--</script>-->
+
+
+</html>

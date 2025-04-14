@@ -1,0 +1,382 @@
+:root {
+  --font-size: 16px;
+}
+h2 {
+  font: normal normal normal 21px/21px Calibri;
+  color: #707070;
+  letter-spacing: 0.21px;
+  padding: 5px;
+}
+
+.imagen-de-catalogos {
+  height: auto !important;
+  vertical-align: middle;
+  width: 70% !important;
+}
+
+.boton-de-catalogos {
+  height: 90px;
+  width: 90px;
+  color: #f9a03e;
+  fill: #f9a03e;
+  font-size: 20px;
+  background: #ffffff 0% 0% no-repeat;
+  box-shadow: 0px 3px 6px #0000004c;
+  border-radius: 10px;
+  opacity: 1;
+  border-width: 0px;
+}
+
+.boton-de-catalogos:hover {
+  background: #f9a03e 0% 0% no-repeat;
+  box-shadow: 0px 3px 6px #0000004c;
+  color: #ffffff;
+  fill: #ffffff;
+  border-radius: 10px;
+  opacity: 1;
+  border-width: 0px;
+}
+
+.caja-boton {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 120px;
+  color: #686868;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider {
+  width: 5px;
+  display: inline-block;
+}
+
+.color-mapeo {
+  color: #f9a03e !important;
+}
+
+.color-mapeo:hover {
+  color: #707070 !important;
+}
+
+.split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  text-align: center;
+  width: 75%;
+  height: 100%;
+  background-image: url(../images/Fondo.png);
+  background-repeat: repeat-y;
+  background-size: cover;
+  object-fit: fill;
+}
+
+.imagenes-login {
+  padding-left: 3%;
+  padding-right: 3%;
+  width: 20%;
+  height: auto;
+}
+
+.logo-paqueteria {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  text-align: center;
+}
+
+.imagen-logo-paqueteria {
+  width: 85%;
+  height: auto;
+  margin: auto;
+}
+
+.caja-copyright {
+  position: absolute;
+  text-align: center;
+  left: 10%;
+  right: 30%;
+  width: 80%;
+  top: 90%;
+}
+
+.copyright-texto {
+  text-align: center;
+  font-size: 1.3vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: auto;
+}
+
+.login-text {
+  font-size: 1.2vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: auto;
+  padding-bottom: 8%;
+  text-align: center;
+}
+
+.right {
+  right: 0;
+  height: 100%;
+  width: 25%;
+  padding-top: 0px;
+  background-color: #717171;
+}
+
+.centered {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  right: 0;
+}
+
+.social-media {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 15%;
+  bottom: 10%;
+}
+
+.circle-icon {
+  background: #f9a03e;
+  color: #ffffff;
+  width: 2.4vw;
+  height: 2.4vw;
+  font-size: 1vw;
+  margin-bottom: 20%;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.4vw;
+  vertical-align: middle;
+}
+
+.social-media-item {
+  float: left;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.react-ip-input input {
+  width: 40px !important;
+}
+
+.wrapper-tabla {
+  overflow: auto;
+}
+
+.wrapper-tabla-2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.MuiDataGrid-root {
+  font-size: var(--font-size) !important;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif !important;
+  color: #444444 !important;
+  border: 0px !important;
+  overflow-y: hidden !important;
+}
+
+
+
+.MuiDataGrid-row {
+  padding: 0px !important;
+  max-height: 30px !important;
+  min-height: 30px !important;
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+
+.MuiDataGrid-cell {
+  max-height: 30px !important;
+  min-height: 30px !important;
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+  line-height: 30px !important;
+}
+
+.MuiDataGrid-row:hover {
+  background-color: #fcc88f !important;
+}
+
+.MuiDataGrid-menuIcon {
+  visibility: visible !important;
+}
+
+.MuiTablePagination-toolbar {
+  min-height: 30px !important;
+}
+
+.MuiDataGrid-footer {
+  min-height: 20px !important;
+  max-height: 20px !important;
+}
+
+.MuiDataGrid-colCellTitleContainer .MuiDataGrid-columnsContainer {
+  min-height: 35px !important;
+  max-height: 35px !important;
+}
+
+.MuiDataGrid-columnsContainer {
+  padding-top: 10px !important;
+}
+
+.MuiTypography-body2 {
+  font-size: var(--font-size) !important;
+}
+.MuiStepIcon-text {
+  font-size: var(--font-size) !important;
+}
+
+
+.MuiTablePagination-actions > .MuiSvgIcon-root {
+  font-size: var(--font-size) !important;
+}
+.MuiTabs-indicator {
+  background-color: #f9a03e !important;
+}
+
+.MuiTab-root > span {
+  line-height: 1;
+  font-size: var(--font-size) !important;
+}
+
+.MuiTabs-root {
+  min-height: 20px !important;
+}
+.MuiFormControl-marginDense {
+  margin: 0px !important;
+}
+.MuiFormLabel-root {
+  font-size: var(--font-size) !important;
+}
+.MuiInputBase-root {
+  font-size: var(--font-size) !important;
+  height: 33px;
+}
+
+.widget-wrap {
+  height: 100%;
+  padding-top: 80px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-image: url(../images/calendar.png);
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  background-image: url(../images/calendar.png);
+}
+
+.MuiDataGrid-root .MuiDataGrid-columnsContainer {
+  border-bottom: 1px solid gray !important;
+  border-bottom-color: gray !important;
+}
+
+.MuiStepLabel-active {
+  font-size: inherit !important;
+}
+
+.MuiStepper-root {
+  overflow-x: auto;
+  padding: 0px !important;
+}
+.MuiDataGrid-root .MuiDataGrid-colCellMoving {
+  background-color: white !important;
+}
+.MuiTooltip-popper {
+  pointer-events: auto !important;
+}
+.MuiTooltip-tooltip {
+  max-width: max-content !important;
+  color: black !important;
+}
+.MuiTableCell-root{
+  font-size: var(--font-size) !important
+}
+
+.leaflet-marker-icon {
+  margin-left:-10px !important;
+  margin-top:-10px !important;
+}
+
+.ReactSwipeableBottomSheet--closed {
+  border-radius: 20px !important;
+  background-color: transparent !important;
+}
+.ReactSwipeableBottomSheet--open {
+  border-radius: 20px !important;
+  background-color: transparent !important;
+}
+.react-swipeable-view-container {
+  box-shadow: none !important;
+}
+
+.MuiOutlinedInput-adornedEnd{
+  padding-right: 0px !important;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f9a03e;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f98522;
+}
+
+.leaflet-popup-content p {
+  margin: 0px !important;
+}
+
+.MuiDataGrid-root .MuiDataGrid-row.Mui-selected{
+  background-color:  #f98522 !important;
+}
+
+.MuiBox-root{
+  padding: 0px !important;
+}
+
+.paper-content-top {
+  padding: 16px;
+  margin-top: 8px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.paper-content-middle {
+  padding: 16px;
+  margin-top: 8px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.paper-content-bottom {
+  margin: 8px 16px;
+}
+
+.button-container {
+  margin: 8px 16px;
+}

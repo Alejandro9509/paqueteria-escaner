@@ -1,0 +1,62 @@
+
+qjavascript:S3776"URefactor this function to reduce its Cognitive Complexity from 729 to the 15 allowed.(ˆè²Ô
+Wjavascript:S1481"6Remove the declaration of the unused 'chart' variable.(ËÑŸûÿÿÿÿ
+Tjavascript:S1854"3Remove this useless assignment to variable "chart".(ËÑŸûÿÿÿÿ
+Tjavascript:S1854/"3Remove this useless assignment to variable "width".(¤è‚’úÿÿÿÿ
+Pjavascript:S18540"4Remove this useless assignment to variable "height".(îÊ£º
+Pjavascript:S1186µ".Unexpected empty method 'onAnimationProgress'.(‚È”«ıÿÿÿÿ
+Pjavascript:S1186¸".Unexpected empty method 'onAnimationComplete'.(úéîàıÿÿÿÿ
+Xjavascript:S1481ù"6Remove the declaration of the unused 'where' variable.(ÓÕ®òúÿÿÿÿ
+Ujavascript:S1854ù"3Remove this useless assignment to variable "where".(ÓÕ®òúÿÿÿÿ
+`javascript:S1481„">Remove the declaration of the unused 'findNextWhere' variable.(Í˜ùŒşÿÿÿÿ
+]javascript:S1854„";Remove this useless assignment to variable "findNextWhere".(Í˜ùŒşÿÿÿÿ
+_javascript:S1481"BRemove the declaration of the unused 'findPreviousWhere' variable.(€ûüÚ
+\javascript:S1854"?Remove this useless assignment to variable "findPreviousWhere".(€ûüÚ
+<javascript:S1186­"Unexpected empty function.(ûäìÿÿÿÿÿ
+Vjavascript:S1481Ã"4Remove the declaration of the unused 'cap' variable.(€Şƒƒûÿÿÿÿ
+Sjavascript:S1854Ã"1Remove this useless assignment to variable "cap".(€Şƒƒûÿÿÿÿ
+_javascript:S1481é"BRemove the declaration of the unused 'getAngleFromPoint' variable.(…£¼«
+\javascript:S1854é"?Remove this useless assignment to variable "getAngleFromPoint".(…£¼«
+^javascript:S1481ş"<Remove the declaration of the unused 'splineCurve' variable.(Ë½Öòøÿÿÿÿ
+[javascript:S1854ş"9Remove this useless assignment to variable "splineCurve".(Ë½Öòøÿÿÿÿ
+fjavascript:S1481“"DRemove the declaration of the unused 'calculateScaleRange' variable.(Ø’†œøÿÿÿÿ
+cjavascript:S1854“"ARemove this useless assignment to variable "calculateScaleRange".(Ø’†œøÿÿÿÿ
+Ejavascript:S1656ò"#'cache[str]' is assigned to itself.(ˆ€£ÿÿÿÿÿ
+ajavascript:S1481"?Remove the declaration of the unused 'generateLabels' variable.(Ä‘Èÿÿÿÿÿ
+^javascript:S1854"<Remove this useless assignment to variable "generateLabels".(Ä‘Èÿÿÿÿÿ
+Qjavascript:S1854ç"/Remove this useless assignment to variable "t".(‰¼¬µüÿÿÿÿ
+Qjavascript:S1854ù"/Remove this useless assignment to variable "s".(À¨ê‹úÿÿÿÿ
+~javascript:S4165†"aReview this redundant assignment: "a" already holds the assigned value along all execution paths.(ÂÆ¯²
+Qjavascript:S1854"/Remove this useless assignment to variable "s".(À¨ê‹úÿÿÿÿ
+~javascript:S4165›"aReview this redundant assignment: "a" already holds the assigned value along all execution paths.(ÂÆ¯²
+Qjavascript:S1854£"/Remove this useless assignment to variable "s".(À¨ê‹úÿÿÿÿ
+~javascript:S4165°"aReview this redundant assignment: "a" already holds the assigned value along all execution paths.(ÂÆ¯²
+]javascript:S1481è"@Remove the declaration of the unused 'cancelAnimFrame' variable.(””¦™
+Zjavascript:S1854è"=Remove this useless assignment to variable "cancelAnimFrame".(””¦™
+[javascript:S1481ò">Remove the declaration of the unused 'animationLoop' variable.(Â¶Ûè
+Xjavascript:S1854ò";Remove this useless assignment to variable "animationLoop".(Â¶Ûè
+fjavascript:S1481‡"DRemove the declaration of the unused 'getRelativePosition' variable.(¤Ğòÿùÿÿÿÿ
+cjavascript:S1854‡"ARemove this useless assignment to variable "getRelativePosition".(¤Ğòÿùÿÿÿÿ
+Xjavascript:S1481¯";Remove the declaration of the unused 'bindEvents' variable.(¯™Ü
+Ujavascript:S1854¯"8Remove this useless assignment to variable "bindEvents".(¯™Ü
+Vjavascript:S1135Â"4Complete the task associated to this "TODO" comment.(å…ÿ…ÿÿÿÿÿ
+Vjavascript:S1135È"4Complete the task associated to this "TODO" comment.(å…ÿ…ÿÿÿÿÿ
+\javascript:S1481Ğ"?Remove the declaration of the unused 'getMaximumSize' variable.(Èù£¼
+Yjavascript:S1854Ğ"<Remove this useless assignment to variable "getMaximumSize".(Èù£¼
+Bjavascript:S1186¡	"%Unexpected empty method 'initialize'.(˜Ô†
+@javascript:S125è	"Remove this commented out code.(Ñ¤¤Øşÿÿÿÿ
+;javascript:S125ï	"Remove this commented out code.(²…©û
+:javascript:S125ó	"Remove this commented out code.(ğ÷Ür
+;javascript:S125ø	"Remove this commented out code.(äÁ™·
+[javascript:S1481˜
+">Remove the declaration of the unused 'easingDecimal' variable.(Ğá€ƒ
+Xjavascript:S1854˜
+";Remove this useless assignment to variable "easingDecimal".(Ğá€ƒ
+djavascript:S1481ï"BRemove the declaration of the unused 'firstRotatedWidth' variable.(˜™Ìıÿÿÿÿ
+Vjavascript:S1854ù"9Remove this useless assignment to variable "lastRotated".(àú½
+Vjavascript:S1481œ":Remove the declaration of the unused 'isRotated' variable.(Ïÿâ/
+Sjavascript:S1854œ"7Remove this useless assignment to variable "isRotated".(Ïÿâ/
+ajavascript:S1481î"?Remove the declaration of the unused 'maxWidthRadius' variable.(æ¨ëàøÿÿÿÿ
+Mjavascript:S1117Õ"+'i' is already declared in the upper scope.(°áøÿÿÿÿ
+njavascript:S4138«"LExpected a `for-of` loop instead of a `for` loop with this simple iteration.(ûÏÇÙûÿÿÿÿ
+:javascript:S2310ç"Remove this assignment of "i".(¨…ÄK

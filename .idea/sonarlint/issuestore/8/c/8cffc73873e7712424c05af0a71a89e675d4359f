@@ -1,0 +1,26 @@
+
+5javascript:S2814"'map' is already defined.(…áÕò
+Rjavascript:S1854'"1Remove this useless assignment to variable "map".(·‰ïşÿÿÿÿ
+ujavascript:S3776@"TRefactor this function to reduce its Cognitive Complexity from 66 to the 15 allowed.(¸¸ñåúÿÿÿÿ
+Ljavascript:S1117S"+'i' is already declared in the upper scope.(ËÜâ„øÿÿÿÿ
+Ljavascript:S1117`"+'i' is already declared in the upper scope.(ËÜâ„øÿÿÿÿ
+Cjavascript:S1186€"!Unexpected empty function 'temp'.(Ãââûÿÿÿÿ
+vjavascript:S3776ğ"TRefactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.(½„†úÿÿÿÿ
+~javascript:S4165ü	"aReview this redundant assignment: "i" already holds the assigned value along all execution paths.(ŸÂ‡´
+qjavascript:S3776¶"TRefactor this function to reduce its Cognitive Complexity from 39 to the 15 allowed.(ÓšôŒ
+<javascript:S1186Å"Unexpected empty function.(È½âÓúÿÿÿÿ
+Ujavascript:S1481‘"8Remove the declaration of the unused 'labelDx' variable.(¿ûÕÜ
+Zjavascript:S1481’"8Remove the declaration of the unused 'labelDy' variable.(Ğ°™ñûÿÿÿÿ
+Zjavascript:S1481»"8Remove the declaration of the unused 'offsets' variable.(ä÷Î°ûÿÿÿÿ
+vjavascript:S3776î"TRefactor this function to reduce its Cognitive Complexity from 20 to the 15 allowed.(Æ­­³üÿÿÿÿ
+vjavascript:S3776ä"TRefactor this function to reduce its Cognitive Complexity from 20 to the 15 allowed.(¦øğ¥ÿÿÿÿÿ
+Yjavascript:S1481¯"7Remove the declaration of the unused 'offset' variable.(Ü†Í•şÿÿÿÿ
+Sjavascript:S1481°"6Remove the declaration of the unused 'scale' variable.(–ıï
+qjavascript:S3776„"TRefactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.(œÌ€Ğ
+{javascript:S2703Õ"^Add the "let", "const" or "var" keyword to this declaration of "zoomStep" to make it explicit.(Ìêƒ©
+vjavascript:S3776Š"TRefactor this function to reduce its Cognitive Complexity from 25 to the 15 allowed.(µØŒıúÿÿÿÿ
+8javascript:S1116†"Unnecessary semicolon.(ôŸìúÿÿÿÿ
+vjavascript:S3776Æ"TRefactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed.(«ŞÛıÿÿÿÿ
+Bjavascript:S2814¤" 'seriesData' is already defined.(¯€•Şúÿÿÿÿ
+8javascript:S1116¿"Unnecessary semicolon.(ôŸìúÿÿÿÿ
+8javascript:S1116Ì"Unnecessary semicolon.(ôŸìúÿÿÿÿ

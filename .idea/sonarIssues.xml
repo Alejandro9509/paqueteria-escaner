@@ -1,0 +1,1639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/GridCellEditorTextField">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/honeywell-mobility-web-sdk-v1.20.00.0800/samples/BarcodeReaderDemo/BarcodeReaderDemo.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/.env">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/.idea/workspace.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/build/less/bootstrap/type.less">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/package-lock.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/package.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/public/css/bootstrap-extend.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/public/css/bootstrap.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/public/css/project-style.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/public/index.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/public/less/bootstrap-custom-vars.less">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/App.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Components/Map/ConfirmarUbicacion.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Components/Map/SwipeableBottomSheet.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Components/Map/index.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Components/Scanner/ListadoGuias.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Components/Template/BarraLateralIzquierda.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Constants/index.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Util/Contexts/GuiaContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Util/Contexts/InformesContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Util/Contexts/MensajesConetext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Util/Contexts/OperadoresContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Util/Contexts/RecoleccionContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Util/Contexts/RemitenteDestinatarioContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Util/Contexts/UltimaMillaContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Util/Contexts/UnidadesContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Util/Contexts/ViajesContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Util/Contexts/ZonasContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Util/Data.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Util/Util.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Catalogos.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Clientes.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/ConceptosFacturacion/CrearConcepto.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Configuracion.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Convenios/EscribirConvenio.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Departamento.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/DisplayMapClass.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Embarque.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/EstatusUnidad.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/EstatusViaje.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Folios/Folios.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/GrupoCliente.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Guia.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Informes.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Login.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Operadores.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Paises.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Recoleccion.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/RemitentesDestinatarios.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Rutas.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Scanner.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Sucursal.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Tarifas/ConceptosAdicionales.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Tarifas/CrearTarifa.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Tarifas/ProductosTarifa.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Tarifas/Tarifas.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/TipoUnidad/TipoUnidad.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/UltimaMilla.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/UltimaMilla/AgregarPaqueteUltimaMilla.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/UltimaMilla/Configuracion.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/UltimaMilla/Cronograma.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/UltimaMilla/DetalleParadas.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/UltimaMilla/FiltersMap.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/UltimaMilla/Mensajes.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/UltimaMilla/PaquetesList.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/UltimaMilla/Paradas.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/UltimaMilla/ParadasStyle.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/UltimaMilla/RemplazarPaqueteUltimaMilla.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/UltimaMilla/Rutas.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/UltimaMilla/SucursalesList.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/UltimaMilla/Tour.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/UltimaMilla/TourUltimaMilla.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/UltimaMilla/UltimaMilla.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/UltimaMilla/UnidadesList.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/UltimaMilla/ZonasList.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/UltimaMilla/index.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Unidades.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Usuarios.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Usuarios/Derechos.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Viajes.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Viajes/ActualizarDiponibilidadEquipo.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Viajes/AgregarViaje.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Viajes/AsignarOperadorUnidad.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Viajes/DetalleInforme.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Viajes/InformesPorAsignar.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Viajes/LlegadaParadas.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Viajes/SalidaParadas.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Viajes/TablaUnidadViajes.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Zonas.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Zonas/Zonas.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/Zonas/ZonasAgregar.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/carga/carga.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/descarga/descarga.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/Views/home.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/assets/themes/index.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/components/spinner/index.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/iconos/Catalogos/Icono Grupo Clientes/icono_grupo_cliente.svg">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/iconos/Mapa/flagIcon.svg">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/iconos/Mapa/fullscreen-exit.svg">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/iconos/Mapa/fullscreen.svg">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/iconos/Mapa/iconoCalendario.svg">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/iconos/Mapa/paradas.svg">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/iconos/Menu/IconoUltimaMilla/IconoUltimaMilla.svg">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/iconos/Menu/palomita.svg">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/index.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/index.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/index.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/routes.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/routesCatalogos.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/utils/context/CiudadesContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/utils/context/GuiaContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/views/app.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/views/home/home.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/views/scanner/Scanner.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/webpack.config.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../paqueteria-portal-clientes/public/index.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../paqueteria-portal-clientes/src/App.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../paqueteria-portal-clientes/src/Components/SAT/ClavesCFDI.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../paqueteria-portal-clientes/src/Views/Login.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../paqueteria-portal-clientes/src/Views/Paquetes/Paquetes.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../paqueteria-portal-clientes/src/Views/PropuestaLogin.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/.gitignore">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/.idea/sonarIssues.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/.idea/workspace.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/package.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/public/css/bootstrap.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/public/css/common.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/public/css/components.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/public/css/layout.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/public/css/pages.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/public/css/project-style.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/public/css/style.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/public/css/widgets.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/public/index.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/App.css">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/App.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Components/Login/LoginExterno.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Components/Map/ConfirmarUbicacion.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Components/Template/BarraLateralIzquierda.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Components/spinner/index.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Constants/index.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/CiudadesContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/ClientesContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/CodigoPostalContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/ConceptosFacturacionContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/ConveniosContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/CorteCajaContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/Cotizador.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/CotizadorContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/DetalleParadasContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/EmbalajesContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/EmbarquesContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/GuiaContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/InformesContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/MensajesConetext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/MunicipiosContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/OperadoresContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/ProductosContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/RecoleccionContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/RemitenteDestinatarioContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/UltimaMillaContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/UnidadesContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/UsuarioContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/UtileriasContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/ViajesContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/ZonaOperativaContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Util/Contexts/ZonaTarifaContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Clientes.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Clientes/DialogTableClientes.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/ConceptosFacturacion/ClavesCFDI.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/ConceptosFacturacion/Cotizador.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/ConceptosFacturacion/CrearConcepto.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Convenios/Convenios.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Convenios/EscribirConvenio.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Embarque.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Filtros/Filtros.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Guia.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Guia/CambiarTipoCobro.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Guia/ImprimirEtiquetas.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Guia/Ocurre.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Informes.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Paquetes/Paquetes.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Recoleccion.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/RemitenteDestinatario/DialogTableRemDes.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/RemitentesDestinatarios.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/SAT/ComplementosSAT.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Tarifas/ConceptosFacturacion.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Tarifas/ProductosPrecios.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Tarifas/ProductosTarifa.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/UltimaMilla/AgregarPaqueteUltimaMilla.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/UltimaMilla/Cronograma.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/UltimaMilla/DetalleParadas.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/UltimaMilla/FiltersMap.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/UltimaMilla/PaquetesList.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/UltimaMilla/PaquetesPlaneacion.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/UltimaMilla/Tour.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/UltimaMilla/TourUltimaMilla.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/UltimaMilla/UltimaMilla.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/UltimaMilla/UnidadesList.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/UltimaMilla/ZonasList.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Viajes.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Viajes/AgregarViaje.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Viajes/AsignarOperadorUnidad.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Viajes/DetalleInforme.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Viajes/LlegadaParadas.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/Viajes/SalidaParadas.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/Views/ZonasOperativas/CodigosPostalesZonas.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/iconos/Catalogos/Icono Convenios/icono_convenios.svg">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/iconos/Catalogos/Icono Plantilla Correo/IconoPlantillaCorreoNaranja.svg">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/iconos/Catalogos/Icono Productos/IconoProductos.svg">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/iconos/Catalogos/Icono Zonas Tarifas/IconoTarifaZona.svg">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/iconos/Menu/IconoCorteCaja/IconoCorteCaja.svg">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/iconos/Menu/IconoCorteCaja/IconoCorteCajaGris.svg">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/index.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/routes.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../proyecto-paqueteria/src/routesCatalogos.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/ROOT/WEB-INF/web.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/App.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/app-navigation.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/app-routes.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/assets/constants/index.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/components/login-form/login-form.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/components/login-form/oauth2/OAuth2RedirectHandler.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/components/side-navigation-menu/side-navigation-menu.scss">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/context/IndicatorContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/context/ProgramContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/context/ProgramEvidenceContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/context/UserContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/layouts/side-nav-inner-toolbar/side-nav-inner-toolbar.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/layouts/side-nav-outer-toolbar/side-nav-outer-toolbar.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/pages/catalogs/academic-unit/catalog-academic-unit.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/pages/follow-up/recomendations.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/pages/indicators/admin-evidences.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/pages/indicators/admin-indicator.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/pages/indicators/admin-recomentadions.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/pages/indicators/dowload-file-period.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/pages/program-members/admin-program-members.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/pages/program-members/program-members-detail.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/pages/programs/admin-programs.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/pages/report-indicators/comment.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/pages/report-indicators/recomendation-evidence.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/pages/report-indicators/report-indicators.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/pages/report-indicators/report_recomendations.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/pages/review-indicator/review-indicator.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/CFP/sw-uabc-cfp-frontend/src/pages/review-indicator/upload-file.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/Cetys/sw-cetys-cercana-web/package.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/Cetys/sw-cetys-cercana-web/src/app/App.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/Cetys/sw-cetys-cercana-web/src/app/routes.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/Cetys/sw-cetys-cercana-web/src/app/views/LandingPage/Sections/WorkSection.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/Cetys/sw-cetys-cercana-web/src/app/views/frequentAnswers/frequentAnswers.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/Cetys/sw-cetys-cercana-web/src/app/views/reports/EvaluationReport.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/Cetys/sw-cetys-cercana-web/src/app/views/ticket/CreateTicket.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/Cetys/sw-cetys-cercana-web/src/app/views/ticket/QualifyTicket.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/Cetys/sw-cetys-cercana-web/src/app/views/ticket/ResolvedTicket.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/Cetys/sw-cetys-cercana-web/src/app/views/ticket/Ticket.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/Cetys/sw-cetys-cercana-web/src/app/views/ticket/TicketDetail.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/Cetys/sw-cetys-cercana-web/src/app/views/user/admins/admins.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/Cetys/sw-cetys-cercana-web/src/app/views/user/profile/Profile.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/Cetys/sw-cetys-cercana-web/src/assets/constants/index.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/Cetys/sw-cetys-cercana-web/src/components/Header/Header.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/Cetys/sw-cetys-cercana-web/src/components/Header/HeaderLinks.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/Cetys/sw-cetys-cercana-web/src/components/MessageList/index.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/Cetys/sw-cetys-cercana-web/src/util/Contexts/TicketContext.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/sw-sierra-servicio-web/package-lock.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/sw-sierra-servicio-web/package.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/sw-sierra-servicio-web/src/app/routes.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/sw-sierra-servicio-web/src/app/views/Dashboard/AnswerChart.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/sw-sierra-servicio-web/src/app/views/Dashboard/Dashboard.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/sw-sierra-servicio-web/src/app/views/category/categoryList.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/sw-sierra-servicio-web/src/app/views/ticket/CreateTicket.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/sw-sierra-servicio-web/src/app/views/ticket/Ticket.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/sw-sierra-servicio-web/src/app/views/ticket/TicketDetail.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Web/sw-sierra-servicio-web/src/assets/constants/index.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/f5746bf4-8842-4f3d-889c-20fece67adfe/console.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/f5746bf4-8842-4f3d-889c-20fece67adfe/console_1.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/f5746bf4-8842-4f3d-889c-20fece67adfe/console_10.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/f5746bf4-8842-4f3d-889c-20fece67adfe/console_4.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/f5746bf4-8842-4f3d-889c-20fece67adfe/console_5.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/f5746bf4-8842-4f3d-889c-20fece67adfe/console_6.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/f5746bf4-8842-4f3d-889c-20fece67adfe/console_7.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/f5746bf4-8842-4f3d-889c-20fece67adfe/console_8.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/f5746bf4-8842-4f3d-889c-20fece67adfe/console_9.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_CatCatalogoSATPaginado.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_CatCatalogoSATPaginadoPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_CatClientesPaginado.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_CatCodigosPostalesGetMunicipiosByIdEstadoPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_CatCotizacionAgregarPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_CatPaquetesCotizadorAgregarPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_CatRemitentesDestinatariosPaginado.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_CatRemitentesDestinatariosPaginadoPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_CatTarifaModificarPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_CatTarifasGetByOrigenDestinoTipoCotizacionPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_CatTarifasGetByOrigenDestinoTipoPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ObtenerFecha.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ProEmbarqueAgregarPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ProEmbarqueDetalleAgregarPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ProEmbarqueGetListadoFiltroPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ProEmbarqueModificarPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ProGuiaAgregarPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ProGuiaCancelarPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ProGuiaTerminarParadaPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ProGuiasGetListadoFiltro2PQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ProRecoleccionAgregarPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ProRecoleccionAgregarPaquetePQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ProRecoleccionModificarPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ProUltimaMillaGetPaquetesListadoOperadorUnidadPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ProUltimaMillaGetPaquetesListadoPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ProUltimaMillaGetPaquetesListadoViajePQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ProViajeAgregarPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ProViajeCartaPorteAgregarPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ProViajeLlegadaAgregarPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ProViajeModificarPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_ProViajeSalidaAgregarPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_UltimaMillaTerminarParadaPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/ac2c184f/f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7_PRODUCCION_BD/schema/dbo/routine/usp_CatTarifasGetByOrigenDestinoTipoPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/dummy.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/dumpDataPreview">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/generated.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_CatCotizacionAgregarPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_CatTarifaAgregarPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_CatTarifaCobroAgregarPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/routine/usp_CatTarifasGetByOrigenDestinoTipoPQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="f5746bf4-8842-4f3d-889c-20fece67adfe/database/GMTERP_WEB_PQ_ADI880815DA7/schema/dbo/table/ProEmbarquePQ.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

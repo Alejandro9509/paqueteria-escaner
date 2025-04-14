@@ -1,0 +1,10 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "editor.showFoldingControls": "always",
+    "editor.folding": true,
+    "editor.foldingStrategy": "indentation", 
+}
