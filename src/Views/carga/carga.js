@@ -417,18 +417,18 @@ class Carga extends Component {
           />
 
           <form onSubmit={this.onSubmit}>
-            <Grid container spacing={3}>
+            <Grid container spacing={1}>
               {/* Filtros */}
               <Grid item xs={12}>
                 <Paper elevation={3} style={styles.paper}>
-                  <Typography variant="h5" gutterBottom>
+                  <Typography variant="h6" gutterBottom>
                     Filtros de Búsqueda
                   </Typography>
                   <Divider style={styles.divider} />
                   
                   <MuiPickersUtilsProvider utils={DateFnsUtils} locale={es}>
                     <Grid container spacing={2} alignItems="center">
-                      <Grid item xs={12} md={6}>
+                      <Grid item xs={6} md={6}>
                         <DatePicker
                             label="Fecha Inicial"
                             value={this.state.fechaInicial}
@@ -447,7 +447,7 @@ class Carga extends Component {
                             />
                       </Grid>
                       
-                      <Grid item xs={12} md={6}>
+                      <Grid item xs={6} md={6}>
                         <DatePicker
                             label="Fecha Final"
                             value={this.state.fechaFinal}
@@ -505,21 +505,21 @@ class Carga extends Component {
                   <Paper elevation={3} style={{ ...styles.paper}}>
                     <Grid container spacing={2}>
                       <Grid item xs={12} md={4}>
-                        <Typography variant="h6">
-                          <Box fontWeight="fontWeightBold">Folio:</Box>
-                          {informeSeleccionado.m_sFolioInforme}
+                        <Typography >
+                          <Box >Folio: {informeSeleccionado.m_sFolioInforme}</Box>
+                          
                         </Typography>
                       </Grid>
-                      <Grid item xs={12} md={2}>
-                        <Typography variant="h6">
-                          <Box fontWeight="fontWeightBold">Origen:</Box>
-                          {informeSeleccionado.m_sCiudadOrigen}
+                      <Grid item xs={6} md={2}>
+                        <Typography >
+                          <Box >Origen: {informeSeleccionado.m_sCiudadOrigen}</Box>
+                          
                         </Typography>
                       </Grid>
-                      <Grid item xs={12} md={2}>
-                        <Typography variant="h6">
-                          <Box fontWeight="fontWeightBold">Destino:</Box>
-                          {informeSeleccionado.m_sCiudadDestino}
+                      <Grid item xs={6} md={2}>
+                        <Typography >
+                          <Box >Destino: {informeSeleccionado.m_sCiudadDestino}</Box>
+                          
                         </Typography>
                       </Grid>
                     </Grid>
@@ -530,7 +530,7 @@ class Carga extends Component {
               {/* Resumen */}
               <Grid item xs={12}>
                 <Paper elevation={3} style={styles.paper}>
-                  <Typography variant="h5" gutterBottom>
+                  <Typography variant="h6" gutterBottom>
                     Resumen de Carga
                   </Typography>
                   <Divider style={styles.divider} />
@@ -541,7 +541,7 @@ class Carga extends Component {
                         <Typography variant="subtitle1" color="textSecondary">
                           Total Paquetes
                         </Typography>
-                        <Typography variant="h4" color="primary">
+                        <Typography variant="h6" color="primary">
                           {totalPaquetes}
                         </Typography>
                       </Paper>
@@ -552,11 +552,14 @@ class Carga extends Component {
                         <Typography variant="subtitle1" color="textSecondary">
                           Peso Total
                         </Typography>
-                        <Typography variant="h4" color="primary">
+                        <Typography variant="h6" color="primary">
                           {pesoTotal.toFixed(4)} kg
                         </Typography>
                       </Paper>
                     </Grid>
+                    {/*
+
+
                     
                     <Grid item xs={12} sm={6} md={3}>
                       <Paper elevation={0} style={{ padding: 16, backgroundColor: '#F3F3F3' }}>
@@ -579,6 +582,7 @@ class Carga extends Component {
                         </Typography>
                       </Paper>
                     </Grid>
+                    */}
                   </Grid>
                 </Paper>
               </Grid>
@@ -586,7 +590,7 @@ class Carga extends Component {
               {/* Listado de Productos */}
               <Grid item xs={12}>
                 <Paper elevation={3} style={styles.paper}>
-                  <Typography variant="h5" gutterBottom>
+                  <Typography variant="h6" gutterBottom>
                     Detalle de Productos Escaneados
                   </Typography>
                   <Divider style={styles.divider} />
