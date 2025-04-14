@@ -21,10 +21,11 @@ function modificarOperadores(id, params) {
 function validarLoginOperador(usuario, rfc) {
     const url = `${window.RUNTIME_CONFIG.BACKEND_URL_REPORTES ?? process.env.REACT_APP_REPORT_URL}/api/Operador/ValidarLoginPaqueteria` ;
     let result;
+
     trackPromise(
-        result =  axios
-            .post(url,Object.assign({}, {username: usuario}), { headers : {...headers, RFC: rfc} })
+        result =  axios.post(url,Object.assign({}, {username: usuario}), { headers : {...headers, RFC: rfc} })
     );
+    
     return result
 }
 

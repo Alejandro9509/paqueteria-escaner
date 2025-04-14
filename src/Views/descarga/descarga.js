@@ -1,332 +1,404 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
-    Button,
-    Grid,
-    Paper,
-    Typography
+  Button,
+  Grid,
+  Paper,
+  Typography,
+  Box,
+  Container,
+  Divider,
+  createMuiTheme,
+  ThemeProvider,
+  CssBaseline
 } from "@material-ui/core";
 import ListadoProductos from "../../Components/Scanner/ListadoGuias";
 import Noty from "noty";
 import {
-    marcarLlegadaInforme,
-    obtenerInformesIdEscaner,
-    descargaAgregarListadoBorrador,
-    descargaObtenerListadoBorrador,
-
+  marcarLlegadaInforme,
+  obtenerInformesIdEscaner,
+  descargaAgregarListadoBorrador,
+  descargaObtenerListadoBorrador,
 } from "../../Util/Contexts/InformesContext";
-import $ from 'jquery';
 import ConfirmDialog from "./ConfirmDialog";
-import AppBarCustom from "../AppBarCustom"; // Import
+import AppBarCustom from "../AppBarCustom";
 import ErrorAudio from "../../Assets/sounds/Error.wav";
 import SuccesAudio from "../../Assets/sounds/Success.wav";
-function showSuccess(mensaje) {
-    new Noty({
-        type: "information",
-        layout: "topCenter",
-        text: mensaje,
-        timeout: "3000"
-    }).show()
-}
-function showError(mensaje) {
-    new Noty({
-        type: "warning",
-        layout: "topCenter",
-        text: mensaje,
-        timeout: "8000"
-    }).show()
-}
-window.jQuery = window.$ = $;
-var scannerInput ="";
-var lastClear=0;
+
+// Configuración del tema personalizado
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+        main: '#FF9933',
+      },
+      secondary: {
+        main: '#ff9100',
+      },
+      third: {
+        main: '#0099DD',
+      },
+    background: {
+      default: '#f5f5f5',
+    },
+  },
+  typography: {
+    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+    h3: {
+      fontWeight: 500,
+      fontSize: '1.2rem',
+    },
+    h4: {
+      fontWeight: 400,
+      fontSize: '1rem',
+    },
+  },
+  overrides: {
+    MuiPaper: {
+      rounded: {
+        borderRadius: 12,
+      },
+    },
+    MuiButton: {
+      root: {
+        textTransform: 'none',
+        padding: '10px 20px',
+      },
+    },
+  },
+});
+
+// Estilos personalizados
+const styles = {
+  container: {
+    paddingTop: 24,
+    paddingBottom: 24,
+  },
+  paper: {
+    padding: 24,
+    marginBottom: 16,
+  },
+  headerInfo: {
+    backgroundColor: '#f5f5f5',
+    padding: '16px 24px',
+  },
+  buttonGroup: {
+    display: 'flex',
+    gap: 16,
+    marginBottom: 16,
+  },
+  productList: {
+    marginTop: 16,
+  },
+};
+
+// Helpers
+const showSuccess = (mensaje) => {
+  new Noty({
+    type: "success",
+    layout: "topCenter",
+    text: mensaje,
+    timeout: 3000,
+  }).show();
+};
+
+const showError = (mensaje) => {
+  new Noty({
+    type: "error",
+    layout: "topCenter",
+    text: mensaje,
+    timeout: 8000,
+  }).show();
+};
+
+const playAudio = (audioFile) => new Audio(audioFile).play();
+const vibrateDevice = () => window.navigator?.vibrate?.(300);
+
+let scannerInput = "";
+let lastClear = 0;
+
 class Descarga extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
+  state = {
+    idQR: "",
+    productosListadoDescarga: [],
+    dataInformes: [],
+    informe: null,
+    openConfirmDialog: false,
+  };
+
+  componentDidMount() {
+    document.addEventListener("keypress", this.handleKeyPress);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("keypress", this.handleKeyPress);
+  }
+
+  esEnteroValido = (string) => {
+    return /^\d+$/.test(string);
+  };
+
+  handleKeyPress = (e) => {
+    clearTimeout(lastClear);
+    lastClear = window.setTimeout(() => { scannerInput = ""; }, 500);
+    scannerInput += e.key;
+    
+    if (scannerInput.includes("s")) {
+      this.onChangeQR(scannerInput.replace("s", ""));
+      scannerInput = "";
+    }
+    e.preventDefault();
+  };
+
+  escanearQRProducto = (qr, isFromBorrador) => {
+    const array = [...this.state.productosListadoDescarga];
+    const informacionQR = qr.split("-");
+    
+    if (informacionQR.length === 0) {
+      showError("Etiqueta no válida");
+      vibrateDevice();
+      playAudio(ErrorAudio);
+      return;
+    }
+
+    const indexGuiaSeleccionada = array.findIndex(p => 
+      p.m_nIdEmbarqueDetalle === parseInt(informacionQR[1]) && 
+      p.index === parseInt(informacionQR[2])
+    );
+
+    if (indexGuiaSeleccionada >= 0) {
+      array[indexGuiaSeleccionada].verificado = true;
+      this.setState({
+        idQR: "",
+        productosListadoDescarga: array
+      }, () => {
+        if (!isFromBorrador) this.generarBorrador();
+        playAudio(SuccesAudio);
+      });
+    } else {
+      vibrateDevice();
+      playAudio(ErrorAudio);
+      showError("Verifique que la guía se encuentre asignada al informe");
+    }
+  };
+
+  generarBorrador = () => {
+    const datosVerificados = this.state.productosListadoDescarga.filter(
+      objeto => objeto.verificado === true
+    );
+    
+    descargaAgregarListadoBorrador(
+      this.state.informe.m_nIdInforme, 
+      datosVerificados
+    ).then(({data}) => {
+      showSuccess(data);
+    }).catch(error => {
+      showError("Error al generar borrador");
+    });
+  };
+
+  handleEliminarProducto = (e, producto) => {
+    e.preventDefault();
+    const nuevosProductos = this.state.productosListadoDescarga.filter(
+      i => i !== producto
+    );
+    this.setState({ productosListadoDescarga: nuevosProductos });
+  };
+
+  onChangeQR = (idEscaner) => {
+    if (!idEscaner) return;
+
+    if (!this.state.informe) {
+      if (!this.esEnteroValido(idEscaner)) {
+        showError('El código escaneado no es válido');
+        vibrateDevice();
+        playAudio(ErrorAudio);
+        return;
+      }
+
+      if (localStorage.getItem(`informe${idEscaner}`)) {
+        const state = JSON.parse(localStorage.getItem(`informe${idEscaner}`));
+        this.setState(state);
+        return;
+      }
+
+      obtenerInformesIdEscaner(idEscaner).then(({data}) => {
+        const arrayGuias = [];
+        data.m_arrClsProGuia.forEach(d => {
+          d.m_arrClsDetalle.forEach((p, pindex) => {
+            for (let i = 0; i < p.ctd; i++) {
+              const item = JSON.parse(JSON.stringify(d));
+              item.numeracion = `${i + 1} - ${p.ctd}`;
+              item.verificado = d.m_nIdEstatusGuia !== 6;
+              item.index = i;
+              item.paqueteIndex = pindex;
+              item.m_nIdEmbarqueDetalle = p.m_nIdEmbarqueDetalle;
+              arrayGuias.push(item);
+            }
+          });
+        });
+
+        this.setState({
+          idQR: "",
+          informe: data,
+          productosListadoDescarga: arrayGuias
+        }, () => {
+          descargaObtenerListadoBorrador(idEscaner).then(({data}) => {
+            data.forEach((objeto) => {
+              this.escanearQRProducto(objeto.qr, true);
+            });
+          });
+        });
+      }).catch(error => {
+        showError('El código de informe escaneado es inválido');
+        vibrateDevice();
+        playAudio(ErrorAudio);
+      });
+    } else {
+      if (this.state.productosListadoDescarga.length > 0) {
+        this.escanearQRProducto(idEscaner, false);
+      }
+    }
+  };
+
+  handleUserResponse = (response) => {
+    this.setState({ openConfirmDialog: false });
+    
+    if (response) {
+      const now = new Date();
+      const params = {
+        m_dFechaLlegada: `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`,
+        m_tHoraLlegada: `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`
+      };
+
+      marcarLlegadaInforme(this.state.informe.m_nIdInforme, params)
+        .then(({data}) => {
+          showSuccess(data);
+          this.setState({
             idQR: "",
             productosListadoDescarga: [],
             dataInformes: [],
-            informe: null,
-            openConfirmDialog: false,
-        };
-        this.handleUserResponse = this.handleUserResponse.bind(this);
-        this.handleDialogClose = this.handleDialogClose.bind(this);
-        this.onCerrarInformeClick = this.onCerrarInformeClick.bind(this)
-        this.handleEliminarProducto = this.handleEliminarProducto.bind(this)
-        this.onChangeQR = this.onChangeQR.bind(this)
-        this.handleKeyPress = this.handleKeyPress.bind(this)
-        this.handleGuardarInformacion = this.handleGuardarInformacion.bind(this)
-        this.verificarProducto = this.verificarProducto.bind(this)
-        this.generarBorrador = this.generarBorrador.bind(this)
-        this.escanearQRProducto = this.escanearQRProducto.bind(this)
-
-
-    }
-
-    componentWillMount() {
-        this.setState({informe: null})
-    }
-
-    componentDidMount() {
-
-
-        document.addEventListener("keypress", this.handleKeyPress)
-        console.log('DESCARGA MONTADO')
-    }
-    componentWillUnmount() {
-        document.removeEventListener("keypress", this.handleKeyPress);
-        console.log('DESCARGA DESMONTADO')
-    }
-
-    // ESTA FUNCION SE LLAMA CUANDO SE ESCANEA UN CODIGO QR DE PAQUETE
-    // Y CUANDO SE RECUPERA EL BORRADOR PARA AGREGAR EL PRODUCTO GUARDADO AL LISTADO
-    // LA VARIABLE isFromBorrador SERVIRA PARA QUE SE GUARDE UN BORRADOR CADA QUE SE AGREGA UN PAQUETE MIENTRAS
-    // NO SE HAYA LLAMADO LA FUNCION DESDE EL BORRADOR
-    escanearQRProducto(qr, isFromBorrador){
-        const array = this.state.productosListadoDescarga
-        const informacionQR =  qr.split("-")
-        if (informacionQR.length === 0){
-            showSuccess("Etiqueta no valida")
-            if (window.navigator && window.navigator.vibrate) {
-                window.navigator.vibrate(300);
-            }
-            new Audio(ErrorAudio).play()
-            return
-        }
-        const indexGuiaSeleccionada = array.findIndex(p => { return (p.m_nIdEmbarqueDetalle === parseInt(informacionQR[1]) && p.index === parseInt(informacionQR[2]))})
-        if (indexGuiaSeleccionada >= 0) {
-           
-            array[indexGuiaSeleccionada].verificado = true
-            this.setState({
-                idQR: "",
-                productosListadoDescarga: array
-            })
-            if (!isFromBorrador){
-                this.generarBorrador()
-            }
-            new Audio(SuccesAudio).play()
-           
-        } else {
-            if (window.navigator && window.navigator.vibrate) {
-                window.navigator.vibrate(300);
-            }
-            new Audio(ErrorAudio).play()
-            showSuccess("Verifiqué que la guía se encuentre asignada al informe")
-        }
-    }
-    handleKeyPress(e) {
-        console.log(e)
-        clearTimeout(lastClear);
-        lastClear=window.setTimeout(function(){
-            scannerInput="";
-        },500);
-        scannerInput+=e.key;
-        if (scannerInput) {
-            if (scannerInput.includes("s")) {
-                this.onChangeQR(scannerInput.replace("s", ""))
-                scannerInput = ""
-            }
-        }
-        e.preventDefault();
-    }
-
-    generarBorrador(){
-        let datosVerificados = this.state.productosListadoDescarga.filter(objeto => objeto.verificado === true);
-        descargaAgregarListadoBorrador(this.state.informe.m_nIdInforme, datosVerificados).then(({data}) =>{
-            showSuccess(data);
+            informe: null
+          });
         })
+        .catch(error => {
+          showError("Error al marcar llegada del informe");
+        });
     }
+  };
 
+  handleDialogClose = () => {
+    this.setState({ openConfirmDialog: false });
+  };
 
-    handleEliminarProducto(e, p) {
-        let newData = []
-        newData = this.state.productosListadoDescarga.filter((i) => i !== p)
-        this.setState({productosListadoDescarga: newData})
-     
-    }
+  onCerrarInformeClick = (event) => {
+    event.preventDefault();
+    this.setState({ openConfirmDialog: true });
+  };
 
-    handleGuardarInformacion(event){
-        event.preventDefault()
-        localStorage.setItem(`informe${this.state.informe.m_nIdInforme}`, JSON.stringify(this.state))
-        showSuccess("Información Guardada")
-        window.location.reload();
-    }
+  handleGuardarInformacion = (event) => {
+    event.preventDefault();
+    localStorage.setItem(`informe${this.state.informe.m_nIdInforme}`, JSON.stringify(this.state));
+    showSuccess("Información Guardada");
+    window.location.reload();
+  };
 
-    onCerrarInformeClick(event) {
-        event.preventDefault()
-      
-        try {
-            this.setState({ openConfirmDialog: true });
-        }catch (e){
-            console.log(e)
-        }
-    }
+  verificarProducto = (index) => {
+    const array = [...this.state.productosListadoDescarga];
+    array[index].verificado = true;
+    this.setState({
+      productosListadoDescarga: array
+    });
+  };
 
-    verificarProducto(index){
-        const array = this.state.productosListadoDescarga
-        array[index].verificado = true
-        this.setState({
-            productosListadoDescarga: array
-        })
-    }
+  render() {
+    const { 
+      informe, 
+      productosListadoDescarga, 
+      openConfirmDialog 
+    } = this.state;
 
-    esEnteroValido(string) {
-        return /^\d+$/.test(string);
-    }
+    const productosVerificados = productosListadoDescarga.filter(
+      p => p.verificado
+    ).length;
+    const totalProductos = productosListadoDescarga.length;
 
-    // ESTA FUNCION SE LLAMA CUANDO SE ESCANEA UN CODIGO QR DE INFORME
-    // Y CUANDO SE ESCANEA UN CODIGO QR DE PAQUETE
-    // Y CUANDO SE RECUPERA EL BORRADOR PARA AGREGAR EL PRODUCTO GUARDADO AL LISTADO
-    onChangeQR(idEscaner) {
-        if (idEscaner.length !== 0) {
-            if (!this.state.informe) {
-                if (!this.esEnteroValido(idEscaner)) {
-                    showError('El código escaneado no es válido')
-                    if (window.navigator && window.navigator.vibrate) {
-                        window.navigator.vibrate(300);
-                    }
-                    new Audio(ErrorAudio).play()
-                    return
-                }
-                if (localStorage.getItem(`informe${idEscaner}`)) {
-                   var state =  JSON.parse(localStorage.getItem(`informe${idEscaner}`))
-                    this.setState(state)
-                    return
-                }
-                obtenerInformesIdEscaner(idEscaner).then(({data}) => {
-                    var arrayGuias = []
-                    data.m_arrClsProGuia.forEach(d => {
-                        d.m_arrClsDetalle.forEach((p, pindex) => {
+    return (
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <ConfirmDialog
+          open={openConfirmDialog}
+          onClose={this.handleDialogClose}
+          message="¿Está seguro de validar la llegada de paquetes? Verifique que todos los paquetes se encuentren en bodega."
+          onUserResponse={this.handleUserResponse}
+        />
+        
+        <AppBarCustom />
+        
+        <Container maxWidth="md" style={styles.container}>
+          {informe && (
+            <Paper elevation={3} style={styles.headerInfo}>
+              <Typography variant="h5" gutterBottom>
+                Informe: {informe.m_sFolioInforme}
+              </Typography>
+              <Grid container spacing={2}>
+                <Grid item xs={12} md={6}>
+                  <Typography variant="body1">
+                    <strong>Origen:</strong> {informe.m_sCiudadOrigen}
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                  <Typography variant="body1">
+                    <strong>Destino:</strong> {informe.m_sCiudadDestino}
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Paper>
+          )}
 
-                            for (let i = 0; i < p.ctd; i++) {
-                                var item = JSON.parse(JSON.stringify(d));
-                                item.numeracion = `${i + 1} - ${p.ctd}`
-                                item.verificado = d.m_nIdEstatusGuia !== 6
-                                item.index = i
-                                item.paqueteIndex = pindex
-                                item.m_nIdEmbarqueDetalle = p.m_nIdEmbarqueDetalle
-                                arrayGuias.push(item)
-                            }
-                        })
+          {informe && (
+            <Box style={styles.buttonGroup}>
+              <Button 
+                variant="contained" 
+                color="secondary"
+                fullWidth
+                onClick={this.generarBorrador}
+              >
+                Generar Borrador
+              </Button>
+              <Button 
+                type="submit"
+                variant="contained" 
+                color="primary"
+                fullWidth
+                onClick={this.onCerrarInformeClick}
+              >
+                Validar Todos los Paquetes
+              </Button>
+            </Box>
+          )}
 
-                    })
-                    this.setState({
-                        idQR: "",
-                        informe: data,
-                        productosListadoDescarga: arrayGuias
-                    })
-                    descargaObtenerListadoBorrador(idEscaner).then(({data}) => {
-                        data.forEach((objeto) => {
-                                this.escanearQRProducto(objeto.qr, true);
-                        });
-                    })
-                }).catch(error => {
-                    showError('El código de informe escaneado es inválido')
-                    if (window.navigator && window.navigator.vibrate) {
-                        window.navigator.vibrate(300);
-                    }
-                    new Audio(ErrorAudio).play()
-                })
-            } else {
-                if (this.state.productosListadoDescarga.length > 0) {
-                    this.escanearQRProducto(idEscaner ,false)
-                }
-            }
-
-        }
-    }
-
-    handleUserResponse(response) {
-        try {
-            this.setState({ openConfirmDialog: true });
-            if (response) {
-                let params = {
-                    m_dFechaLlegada: `${new Date().getFullYear()}-${`${new Date().getMonth()}`.padStart(2, 0)}-${`${new Date().getDate()}`.padStart(2, 0)}`,
-                    m_tHoraLlegada: `${`${new Date().getHours()}`.padStart(2, 0)}:${`${new Date().getMinutes()}`.padStart(2, 0)}`
-                }
-                marcarLlegadaInforme(this.state.informe.m_nIdInforme, params).then(({data}) => {
-                    showSuccess(data)
-                    this.setState({
-                        idQR: "",
-                        productosListadoDescarga: [],
-                        dataInformes: [],
-                        informe: null
-                    })
-                })
-            } else {
-                console.log("User clicked 'No'");
-            }
-        }catch (e){
-            console.log(e)
-        }
-    }
-
-    handleDialogClose() {
-        this.setState({ openConfirmDialog: false });
-    }
-    render() {
-        return (
-            <div>
-                <ConfirmDialog
-                    open={this.state.openConfirmDialog}
-                    onClose={this.handleDialogClose}
-                    message="¿Está seguro de validar la llegada de paquetes? Verifique que todos los paquetes se encuentren en bodega."
-                    onUserResponse={this.handleUserResponse}
-                />
-                <AppBarCustom/>
-                <form onSubmit={this.onCerrarInformeClick}>
-                    <Grid container>
-                        
-                        {
-                            this.state.informe &&
-                            <Grid item xs={12}>
-                                <Paper elevation={0} className={'paper-content-top'} style={{marginBottom:'8px'}}>
-                                    <Typography variant={"h3"}>Informe: {this.state.informe.m_sFolioInforme}</Typography>
-                                    <Typography variant={"h3"}>Origen: {this.state.informe.m_sCiudadOrigen}</Typography>
-                                    <Typography variant={"h3"}>Destino: {this.state.informe.m_sCiudadDestino}</Typography>
-                                </Paper>
-                            </Grid>
-                        }
-                        
-                        {
-                            this.state.informe &&
-                            <Grid item xs={12} style={{ marginBottom: '20px' }}>
-                                <Paper elevation={0} className={'button-container'} style={{marginTop:'0px',marginBottom:'0px'}}>
-                                    <Button onClick={this.generarBorrador} color={"primary"} fullWidth variant={"contained"} size={"large"} style={{boxShadow:'none'}}>
-                                        Generar borrador
-                                    </Button>
-                                </Paper>
-                            </Grid>
-                        }
-                        {
-                            this.state.informe &&
-                            <Grid item xs={12}>
-                                <Paper elevation={0} className={'button-container'} style={{marginTop:'0px',marginBottom:'0px'}}>
-                                    <Button type="submit" color={"primary"} fullWidth variant={"contained"} size={"large"} style={{boxShadow:'none'}}>
-                                        Validar todos los paquetes
-                                    </Button>
-                                </Paper>
-
-                            </Grid>
-                        }
-                      
-                        <Grid item xs={12}>
-                            <Paper elevation={0} className={'paper-content-middle'}>
-                                <Typography variant={"h2"}>Productos</Typography>
-                                <br/>
-                                <ListadoProductos
-                                    productosListado={this.state.productosListadoDescarga}
-                                    handleEliminarProducto={this.handleEliminarProducto} verificarProducto={this.verificarProducto}
-                                    carga={false}
-                                />
-                            </Paper>
-                        </Grid>
-                    </Grid>
-                </form>
+          <Paper elevation={3} style={styles.paper}>
+            <Typography variant="h5" gutterBottom>
+              Productos ({productosVerificados}/{totalProductos} verificados)
+            </Typography>
+            <Divider style={{ marginBottom: 16 }} />
+            
+            <div style={styles.productList}>
+              <ListadoProductos
+                productosListado={productosListadoDescarga}
+                handleEliminarProducto={this.handleEliminarProducto}
+                verificarProducto={this.verificarProducto}
+                carga={false}
+              />
             </div>
-        );
-    }
+          </Paper>
+        </Container>
+      </ThemeProvider>
+    );
+  }
 }
 
-Descarga.propTypes = {};
+Descarga.propTypes = {
+  // Definir PropTypes si es necesario
+};
 
 export default Descarga;

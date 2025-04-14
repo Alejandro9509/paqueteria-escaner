@@ -1,84 +1,117 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Avatar,
   Button,
- Paper, TextField, Typography
+  Paper,
+  TextField,
+  Typography,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  makeStyles
 } from "@material-ui/core";
-import $ from 'jquery';
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
-import Noty from 'noty';
-import { makeStyles } from '@material-ui/core/styles';
-import {validarLoginOperador} from "../Util/Contexts/OperadoresContext";
-
-function showSuccess(mensaje) {
-  new Noty({
-    type: "information",
-    layout: "topCenter",
-    text: mensaje,
-    timeout: "3000"
-  }).show()
-}
-
+import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
+import WarningIcon from "@material-ui/icons/Warning";
+import Noty from "noty";
+import { validarLoginOperador } from "../Util/Contexts/OperadoresContext";
 
 const useStyles = makeStyles((theme) => ({
-  paper: {
-    marginTop: theme.spacing(8),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
   paperLogin: {
-    margin: '16px',
-    padding: '16px',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+    margin: theme.spacing(2),
+    padding: theme.spacing(2),
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   },
   avatar: {
     margin: theme.spacing(1),
     backgroundColor: theme.palette.secondary.main,
   },
   form: {
-    width: '100%', // Fix IE 11 issue.
+    width: "100%",
     marginTop: theme.spacing(1),
   },
   submit: {
-    margin: theme.spacing(1, 0, 0),
+    margin: theme.spacing(2, 0, 0),
+    boxShadow: "none",
+  },
+  warningIcon: {
+    color: theme.palette.warning.main,
+    marginRight: theme.spacing(1),
+    verticalAlign: "middle",
+  },
+  dialogTitle: {
+    display: "flex",
+    alignItems: "center",
   },
 }));
 
-function Login() {
+const showNotification = (mensaje) => {
+  new Noty({
+    type: "information",
+    layout: "topCenter",
+    text: mensaje,
+    timeout: 3000,
+  }).show();
+};
+
+const Login = () => {
   const classes = useStyles();
+  const [numeroOperador, setNumeroOperador] = useState("");
+  const [rfc, setRfc] = useState("");
+  const [openModal, setOpenModal] = useState(false);
+  const [modalMessage, setModalMessage] = useState("");
+  const [errors, setErrors] = useState({ numeroOperador: false, rfc: false });
 
-  const login = (e) => {
+  const validateFields = () => {
+    const newErrors = {
+      numeroOperador: numeroOperador.trim() === "",
+      rfc: rfc.trim() === "",
+    };
+    setErrors(newErrors);
+
+    return !newErrors.numeroOperador && !newErrors.rfc;
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const user = $("#numeroOperador").val();
-    const rfc = $("#rfc").val();
 
-    validarLoginOperador(user, rfc).then(respuesta => {
-      try {
-        if (respuesta.data !== undefined && respuesta.data.m_sNombreCompleto !== undefined && respuesta.data.m_sNombreCompleto !==  "") {
+    if (!validateFields()) {
+      setModalMessage("Por favor completa todos los campos requeridos.");
+      setOpenModal(true);
+      return;
+    }
 
-          localStorage.setItem("accessToken", true);
-          localStorage.setItem("RFC",rfc);
-          localStorage.setItem("UsuarioId", respuesta.data.m_nIdOperador);
-          localStorage.setItem("Email", respuesta.data.m_sCorreoOperador);
-          localStorage.setItem("Usuario", respuesta.data.m_sNombreCompleto);
-          localStorage.setItem("Nombre", respuesta.data.m_sNombreCompleto);
-          window.location.reload();
-        }
-        else {
-          showSuccess(respuesta.data);
-        }
-      } catch {
-        showSuccess(respuesta.data);
+    try {
+      const respuesta = await validarLoginOperador(numeroOperador, rfc);
+
+      if (
+        respuesta?.data?.m_sNombreCompleto &&
+        respuesta.data.m_sNombreCompleto !== ""
+      ) {
+        const { m_nIdOperador, m_sCorreoOperador, m_sNombreCompleto } =
+          respuesta.data;
+
+        localStorage.setItem("accessToken", "true");
+        localStorage.setItem("RFC", rfc);
+        localStorage.setItem("UsuarioId", m_nIdOperador);
+        localStorage.setItem("Email", m_sCorreoOperador);
+        localStorage.setItem("Usuario", m_sNombreCompleto);
+        localStorage.setItem("Nombre", m_sNombreCompleto);
+
+        window.location.reload();
+      } else {
+        showNotification(respuesta?.data || "Datos inválidos.");
       }
-    });
-
-  }
+    } catch (error) {
+      showNotification("Error en el servidor o respuesta inesperada.");
+    }
+  };
 
   return (
-
+    <>
       <Paper className={classes.paperLogin} elevation={0}>
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
@@ -86,45 +119,62 @@ function Login() {
         <Typography component="h1" variant="h5">
           Inicio Sesión
         </Typography>
-        <br/>
-        <form  noValidate onSubmit={login}>
+        <form className={classes.form} noValidate onSubmit={handleSubmit}>
           <TextField
-              variant="outlined"
-              required
-              fullWidth
-              margin={"dense"}
-              id={"numeroOperador"}
-              label="Número Operador"
-              name="numeroOperador"
-              autoComplete="numeroOperador"
-              autoFocus
+            variant="outlined"
+            required
+            fullWidth
+            margin="dense"
+            id="numeroOperador"
+            label="Número Operador"
+            name="numeroOperador"
+            value={numeroOperador}
+            onChange={(e) => setNumeroOperador(e.target.value)}
+            error={errors.numeroOperador}
+            helperText={errors.numeroOperador ? "Campo requerido" : ""}
+            autoFocus
           />
-          <br/>
-          <br/>
           <TextField
-              variant="outlined"
-              required
-              fullWidth
-              margin={"dense"}
-              id={"rfc"}
-              label="RFC"
-              name="rfc"
-              autoComplete="rfc"
-              autoFocus
+            variant="outlined"
+            required
+            fullWidth
+            margin="dense"
+            id="rfc"
+            label="RFC"
+            name="rfc"
+            value={rfc}
+            onChange={(e) => setRfc(e.target.value)}
+            error={errors.rfc}
+            helperText={errors.rfc ? "Campo requerido" : ""}
           />
           <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              color="primary"
-              className={classes.submit}
-              style={{boxShadow:'none'}}
+            type="submit"
+            fullWidth
+            variant="contained"
+            color="primary"
+            className={classes.submit}
           >
             Inicio Sesión
           </Button>
         </form>
       </Paper>
+
+      <Dialog open={openModal} onClose={() => setOpenModal(false)}>
+        <DialogTitle disableTypography className={classes.dialogTitle}>
+          <WarningIcon className={classes.warningIcon} />
+          <Typography variant="h6">Advertencia</Typography>
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText>{modalMessage}</DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={() => setOpenModal(false)} color="primary" autoFocus>
+            Aceptar
+          </Button>
+        </DialogActions>
+      </Dialog>
+    </>
   );
-}
+};
 
 export default Login;
